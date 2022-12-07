@@ -1,0 +1,141 @@
+:root{
+    --base-color: #423E3B;
+    --clear-base-color:#a8a09a;
+    --secondary-color: #FEA82F;
+    --detail-color: #FF2E00;
+    --text-color: white;
+}
+
+/*FONTS*/
+*, a{
+  font-family: "Outfit", sans-serif;  
+}
+
+label,input, select{
+    font-size: 1.5rem;
+}
+
+.web-name{
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+}
+
+footer span{
+    font-size: 1.2rem;
+}
+
+/* COLORS */
+body{
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+header,footer{
+    background-color: var(--secondary-color);
+}
+header > *,footer > *{
+    color: var(--base-color);
+}
+.confirmation-button{
+    background-color: #FF2E00;
+    color: var(--text-color);
+}
+
+/*LAYOUT*/
+body{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: [header]10vh [form]80vh [footer]10vh ;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header,footer{
+    width: 100vw;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-logo{
+    width: 15ch;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+select, input{
+    border-radius: 0.5rem;
+    width: 30ch;
+    padding: 0.8rem;
+    border: var(--clear-base-color) 1pc;
+}
+
+input{
+    width: 30ch;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+}
+select{
+    width: 100%;
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: #FF2E00;
+    border-radius: 0.5rem;
+    border: var(--text-color) 0px;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+#nicka{
+    float: left;
+    width: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--clear-base-color);
+    border-radius: 0.5rem 0px 0px 0.5rem;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+}
+
+footer > a > i{
+    font-size: 1.5rem;
+}
+
+.confirmation-button{
+    min-width: 8rem;
+    border-radius: 0.2em;
+}
+
+.space-char{
+    display: block;
+    width: 1ch;
+    height: 1ch;
+}
+

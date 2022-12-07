@@ -14,17 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=Staatliches&display=swap" rel="stylesheet"> 
     <!--FONT AWESOME (ICONS)-->
     <script src="https://kit.fontawesome.com/42873fe91e.js" crossorigin="anonymous"></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- HEADER -->
     <header>
+        <span class="web-name">MasterDots</span>
     </header>
     <!-- BODY -->
     <main>
-        <img src="./img/Logo.png" alt="Web Logo, its a dragon.">
+        <img class="form-logo" src="./img/Logo.png" alt="Web Logo, its a dragon.">
         <form action="#">
             <div class="formItem">
                 <label for="name">Enter your username</label>
+                <input type="text" name="username" id="nicka" value="@" readonly>
                 <input type="select" name="username" id="username">
             </div>
             <div class="formItem">
@@ -36,11 +40,14 @@
                     <option value="6x6">6x6</option>
                 </select>
             </div>
+            <div class="formItem">
+                <input class="confirmation-button" type="submit" value="PLAY">
+            </div>
         </form>
     </main>
     <!-- FOOTER -->
     <footer>
-        <a href="#">
+        <a href="https://github.com/Smaugthur/MasterDots" target="_blank">
             <span>Powered by</span> <span class="space-char"> </span><i class="fa-brands fa-github"></i>
         </a>
     </footer>
