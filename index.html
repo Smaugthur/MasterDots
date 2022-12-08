@@ -25,7 +25,10 @@
     <!-- BODY -->
     <main>
         <img class="form-logo" src="./img/Logo.png" alt="Web Logo, its a dragon.">
-        <form action="#">
+        <div>
+            <p id="error" hidden></p>
+        </div>
+        <form action="game.html" id="entryForm">
             <div class="formItem">
                 <label for="name">Enter your username</label>
                 <input type="text" name="username" id="nicka" value="@" readonly>
@@ -55,5 +58,8 @@
             <span>Powered by</span> <span class="space-char"> </span><i class="fa-brands fa-github"></i>
         </a>
     </footer>
+    
+    <!--SCRIPTS-->
+    <script src="./js/app.js"></script>
 </body>
 </html>

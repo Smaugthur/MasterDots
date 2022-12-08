@@ -121,6 +121,14 @@ input[type="submit"]{
     border-radius: 0.5rem 0px 0px 0.5rem;
 }
 
+#error{
+    background-color:#dba092;
+    color:#9b1c00;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
 footer a{
     display: flex;
     align-items: center;
